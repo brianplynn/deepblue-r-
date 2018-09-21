@@ -1,0 +1,18 @@
+.background { 
+  background: rgb(52, 166, 251);
+    table-layout: fixed;
+    border-spacing: 0;              
+}
+.background td { 
+  padding: 0;                     
+}
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  border: 2px solid black;
+}
