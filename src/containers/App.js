@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Level from "./components/Level.jsx"
-import GAME_LEVELS from "../GAME_LEVELS.js"
+import Level from "../components/Level.jsx"
+import { GAME_LEVELS } from "../GAME_LEVELS.js"
 import Background from "./Background.jsx";
 import Actors from "./Actors.jsx"
 

@@ -1,7 +1,8 @@
 import React from "react";
-import GAME_LEVELS from "../GAME_LEVELS.js"
+import { levelChars } from "../GAME_LEVELS.js";
+import { Vec } from "../helpers.js"
 
-class Level extends Component {
+class Level {
   constructor(plan) {
     let rows = plan.trim().split("\n").map(l => [...l]);
     this.height = rows.length;

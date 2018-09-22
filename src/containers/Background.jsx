@@ -1,17 +1,25 @@
 import React from "react";
-import Level from "level";
-import { elt } from "helperfunctions.js"
+import { elt } from "../helpers.js"
 
 const Background = ({ level }) => {
   const scale = 20;
-  return elt("table", {
-    class: "background",
-    style: `width: ${level.width * scale}px`
-  }, ...level.rows.map(row =>
-    elt("tr", {style: `height: ${scale}px`},
-        ...row.map(type => elt("td", {class: type})))
-  ));
-	
+  console.log(level);
+  	
+return (
+	<table className = "background" style= {{width: level.width * scale + "px"}}>
+  	<tbody>{level.rows.map(row => {
+  	return (<tr style= {{height: scale + "px"}}>
+  	{row.map(element => {
+	  		return <td className={element}></td>
+	  	})}
+  	</tr>)
+  })}</tbody>
+  	</table>
+  	);
+
+  
+
 }
 
 export default Background;
+
