@@ -1,6 +1,6 @@
 import React from "react";
 import { levelChars } from "../GAME_LEVELS.js";
-import { Vec } from "../helpers.js"
+import { Vec, Player, Coin, Lava, Monster } from "../actortypes.js"
 
 class Level {
   constructor(plan) {

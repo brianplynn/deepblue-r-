@@ -1,5 +1,6 @@
 .background { 
   background: rgb(52, 166, 251);
+  position: relative;
     table-layout: fixed;
     border-spacing: 0;              
 }
@@ -16,9 +17,12 @@
 .wall { 
   background: white;              
 }
+
 .actor { 
-  position: absolute;            
+  position: absolute; 
+  z-index: 1;           
 }
+
 .coin { 
   background: rgb(241, 229, 89); 
 }
